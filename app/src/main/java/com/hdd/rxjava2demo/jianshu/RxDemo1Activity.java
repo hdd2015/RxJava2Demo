@@ -101,7 +101,7 @@ public class RxDemo1Activity extends AppCompatActivity {
     }
 
     /**
-     * 可以把它理解成两根管道之间的一个机关, 当调用它的dispose()方法时, 它就会将两根管道切断, 从而导致下游收不到事件.
+     * Disposable可以把它理解成两根管道之间的一个机关, 当调用它的dispose()方法时, 它就会将两根管道切断, 从而导致下游收不到事件.
      * 注意: 调用dispose()并不会导致上游不再继续发送事件, 上游会继续发送剩余的事件.
      */
     private void disposeTest() {
