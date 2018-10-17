@@ -13,6 +13,9 @@ import io.reactivex.Observer;
 import io.reactivex.disposables.Disposable;
 
 /**
+ * 给初学者的RxJava2.0教程(一) https://www.jianshu.com/p/464fa025229e
+ *
+ * 最基本的RxJava2的使用：
  * 上游和下游就分别对应着RxJava中的Observable和Observer，它们之间的连接就对应着subscribe()
  *
  */

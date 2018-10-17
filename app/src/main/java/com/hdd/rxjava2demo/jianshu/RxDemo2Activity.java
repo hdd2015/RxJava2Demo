@@ -14,8 +14,9 @@ import io.reactivex.functions.Consumer;
 import io.reactivex.schedulers.Schedulers;
 
 /**
- * @author huangdd QQ:2104474503
- * @time 2018/10/16 15:18
+ * 给初学者的RxJava2.0教程(二) https://www.jianshu.com/p/8818b98c44e2
+ *
+ * 线程控制：
  */
 public class RxDemo2Activity extends AppCompatActivity {
     private static final String TAG = "RxDemo2Activity";
@@ -74,6 +75,12 @@ public class RxDemo2Activity extends AppCompatActivity {
          Schedulers.computation() 代表CPU计算密集型的操作, 例如需要大量计算的操作
          Schedulers.newThread() 代表一个常规的新线程
          AndroidSchedulers.mainThread() 代表Android的主线程
+         */
+
+        /**
+         * 常用场景
+         .subscribeOn(Schedulers.io())               //在IO线程进行网络请求
+         .observeOn(AndroidSchedulers.mainThread())  //回到主线程去处理请求结果
          */
     }
 
